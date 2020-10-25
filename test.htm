@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body
+      {
+        margin: 75px;
+        margin-right: 0px;
+        background : url("bg-pattern-bottom-desktop.svg")  right bottom no-repeat , url("bg-pattern-top-desktop.svg")  left top no-repeat;
+        background-size: 500px, 600px, auto;
+
+      }
+  
+      .para
+      {
+        color:grey;
+        padding: 0px; 
+        margin: 0px;
+        
+      }
+      .block-2-part-1
+      {
+          margin-left: 0px;
+      }
+      .block-2-part-2
+      {
+        margin-left: 20px; 
+      }
+      .block-2-part-3
+      {
+        margin-left: 20px ; 
+      }      
+      .corners1
+      {
+        border-radius: 25px;
+        background:#F3ECED;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+      }
+  
+      .star-text-margin
+      {
+        padding-left: 30px;
+        display: inline-block;
+        font-size: smaller;
+        color:#651460 ;
+
+      }
+      .stars {
+       display: inline-block;
+       margin-left: 5px;
+       
+       background-image: url(icon-star.svg);
+      }
+      .stars-5 {
+       width: 85px;
+       height: 16.5px;
+       
+      }
+   
+      .stars-border
+      {
+        border: 1px solid #F3ECED;
+
+        height: auto;
+
+        float: left;
+       
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 40px;
+        padding-bottom: 5px;
+        
+        margin: 5px;
+        margin-top: 7px;
+       
+        border-radius: 5px;
+        background:#F3ECED;
+        text-align: justify;
+
+        width: 300px;
+        height: 30px;
+        
+      }
+      .star-border-1-margin
+      {
+         margin-left: 100px;
+      }
+      .star-border-2-margin
+      {
+        margin-left: 150px;
+      }
+      .star-border-3-margin
+      {
+        margin-left: 200px;
+      }
+      .para1
+      {
+        font-size: smaller;
+        color: grey;
+      }
+      .head1
+      {
+        color:#651460 ;
+        font-weight: bolder;
+        font-size: xx-large;
+        padding: 0px; margin: 0px
+        
+        
+      }
+      .block
+      {
+         border: 1px solid black;
+         font-size: small;
+      }
+      .block2
+      {
+        
+        border: 1px solid #651460 ;
+        background-color:#651460 ;
+        padding-left: 20px;
+        padding-top: 30px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        
+        font-size:15px;
+        font-size: small;
+        border-radius: 5px;
+      }
+      .main
+      {
+        display: flex;
+        
+      }
+      .main2
+      {
+       display:inline-flex;
+       flex-grow:1;
+       
+      }
+      img
+      {
+        border-radius: 50%; 
+        padding-right: 15px;
+
+      }
+      .main-block
+      {
+        border: 1px solid white;
+        margin-top: 35px ;
+        margin-left:60px ;
+        height: 4.8in;
+        padding: 5px;
+        padding-top:20px; ;
+        background-image: url("bg-pattern-top-desktop.svg");
+        background-image: url("bg-pattern-bottom-desktop.svg");
+        background-repeat: no-repeat;
+      }
+      .checkbod
+      {
+              border: 1px solid black;
+              box-sizing: border-box;
+      }
+
+      @media screen and (max-width:800px) 
+      {
+        
+      .block2
+      {
+        
+        text-align: center;
+      
+        padding-top: 30px;
+     
+        padding-bottom: 30px;
+        margin: 10px;
+        margin-right: 5px; 
+        
+        
+      }
+      .block-2-part-2
+      {
+        align-items: center;
+        margin-left: 5px; 
+        margin: 35px;
+        margin-top: 5px;
+        margin-right: 5px;      
+
+      }
+      .block-2-part-3
+      {
+        margin-left: 0px ; 
+        margin: 35px;
+        margin-top: 5px;
+        margin-right: 5px; 
+      }   
+      .block-2-part-1
+      {
+        align-items: center;
+        margin-left: 5px; 
+        margin: 35px;
+        margin-top: 5px;
+        margin-right: 5px; 
+        align-self: center;
+      
+      }
+
+        .stars-border 
+        {
+          margin-left: 5px; /* The width is 100%, when the viewport is 800px or smaller */
+          padding-top: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-bottom: 10px;
+          box-sizing: border-box;
+        }
+        .star-text-margin
+        {
+          padding-left: 0px;
+        }
+      
+      }
+      @media screen and  (max-width: 830px) 
+      {
+          body
+          {
+            margin: auto;
+          }
+      
+         .item-align
+         {
+           margin-left: 35px;
+           align-items: center;
+           align-self: start;
+           align-self: center;
+           vertical-align: middle;
+         }
+       
+         body
+        {
+          width: auto;
+        }
+        .stars-border   
+        {
+          margin: 5px; /* The width is 100%, when the viewport is 800px or smaller */
+          padding-top: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-bottom: 10px;
+        
+          width: 230px;
+          height: 60px;
+          text-align: center;
+          box-sizing: border-box;
+       
+        }
+        .star-text-margin
+        {
+          padding-left: 0px;
+        }
+        .main-block
+      {
+        border: 1px solid white;
+        margin-top: 20px ;
+        margin-left:10px ;
+        height: 4.3in;
+        padding: 5px;
+        padding-top:5px; ;
+      }
+      .head1
+      {
+        text-align: center;
+        padding: 1px;
+
+        margin: 1px;
+        width: 100%;
+      }
+      .para
+      {
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        
+        margin-top: 5px;
+        width: 100%;
+        margin-right: 30px;
+
+      }
+  
+      }
+    
+
+     
+    </style>
+  </head>
+<body>
+
+
+
+
+<div class="main-block  " >
+         
+        <div style="  float: left; box-sizing: border-box; "   >
+          
+          <p class="head1 ">10,000+ of our<br>
+            users love our<br>
+            products<br>
+          </p>
+          <p  class="para "  >
+            "We needed the same printed design as<br>
+            the one we had ordered a week prior. Not<br> 
+            only did they find the original order, but<br> 
+            we also received it in time.Excellent!"
+          </p>
+
+         </div> 
+  
+
+
+         
+<!--first main div complete here-->
+
+<div class="item-align">
+
+  <div class="stars-border star-border-1-margin"  >
+    <span class="stars stars-5"  ></span>
+    <span class="star-text-margin" ><b>Rated 5 stars in review</b></span>
+  </div>
+
+  <div class="stars-border  star-border-2-margin " >
+    <span class="stars stars-5"  ></span>
+    <span class="star-text-margin" ><b>Rated 5 stars in Reort Guru</b></span>
+  </div>
+
+  <div class="stars-border  star-border-3-margin"  >
+    <span class="stars stars-5"  ></span>
+    <span class="star-text-margin" ><b>Rated 5 stars in BestTech</b></span>
+  </div>
+</div>
+<div style="clear: left">
+</div>
+
+
+<!--block 2 part 1-->
+  <div class="block2 block-2-part-1 "  style="margin-top: 15px; float: left;"  >
+      
+    <div class="main">
+      <span class="main2">
+        <img  src="image-colton.jpg" width="25" height="25" class="images"  >
+           
+         <span style="color:whitesmoke;">Colton Smith<br>
+            <span style="color: #C012B6"; >   
+             Verified Buyer<br>
+            </span>
+          </span>       
+        </img>
+    </div>
+
+      <div  class="para">
+      
+        "We needed the same printed design as<br>
+         the one we had ordered a week prior. Not<br> 
+         only did they find the original order, but<br> 
+         we also received it in time.Excellent!"
+      </div>
+  </div>
+
+
+<!--block 2 part 2-->
+
+
+
+<div class="block2 block-2-part-2 " style="  margin-top: 30px; float: left;"   >
+      
+  <div class="main">
+    <span class="main2">
+      <img  src="image-irene.jpg" width="25" height="25" class="images"  >
+        <span style="color:whitesmoke;">Irene Roberts<br>
+          <span style="color: #C012B6"; >   
+            Verified Buyer
+          </span>
+        </span>
+      </img>
+    </span>  
+  </div>
+  
+  <div class="para">
+    
+    
+    "Customer service is always excellent and<br>
+    very quick turn around. Completely<br> 
+    delighted with the simplicity of the<br> 
+    purchase and the speed of delivery.
+  </div>
+</div> 
+
+<!--block 2 part 3-->
+
+<div class="block2 block-2-part-3 " style=" margin-top: 50px; float: left;"   >
+    
+  <div class="main">
+    <span class="main2">
+      <img  src="image-anne.jpg" width="25" height="25" class="images"  >
+        <span style="color:whitesmoke;">Anne Wallace<br>
+          <span style="color: #C012B6"; >   
+             Verified Buyer
+          </span>
+      </span>
+      </img>
+    </span>
+  </div>
+  
+ 
+  
+  <div  class="para">
+    "Customer service is always excellent and<br>
+    very quick turn around. Completely<br> 
+    delighted with the simplicity of the<br> 
+    purchase and the speed of delivery."
+  </div>
+
+</div> 
+
+</div>
+
+
+
+ 
+  </body>
+  
+</html>
